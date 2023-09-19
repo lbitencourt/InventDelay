@@ -1,0 +1,10 @@
+{
+  "name": "Invent Delay",
+  "version": "1.0.0",
+  "description": "Biblioteca de controle de delay",
+  "keywords": "delay",
+  "authors": [{ "name": "Leandro Bitencourt", "email": "bitcourt@gmail.com" }],
+  "license": "MIT",
+  "frameworks": "*",
+  "plataforms": "*"
+}
