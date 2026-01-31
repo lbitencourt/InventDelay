@@ -7,32 +7,25 @@
 
 #include "InventDelay.h"
 
-InventDelay::InventDelay()
-{
+InventDelay::InventDelay() {
 }
-InventDelay::InventDelay(uint32_t delayTime)
-{
+InventDelay::InventDelay(uint32_t delayTime) {
   this->setDelayTime(delayTime);
 }
 
-void InventDelay::setDelayTime(uint32_t delayTime)
-{
+void InventDelay::setDelayTime(uint32_t delayTime) {
   this->_delayTime = delayTime;
 }
-void InventDelay::reset(void)
-{
+void InventDelay::reset(void) {
   this->_startTime = millis();
 }
-uint32_t InventDelay::getTimeSinceLast(void)
-{
+uint32_t InventDelay::getTimeSinceLast(void) {
   return _timeSinceLast;
 }
 
-bool InventDelay::expired(void)
-{
+bool InventDelay::expired(void) {
   _timeSinceLast = (millis() - this->_startTime);
-  if (_timeSinceLast >= this->_delayTime)
-  {
+  if (_timeSinceLast >= this->_delayTime) {
     this->reset();
     return true;
   }
