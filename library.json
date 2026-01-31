@@ -1,10 +1,20 @@
 {
   "name": "Invent Delay",
-  "version": "1.0.0",
-  "description": "Biblioteca de controle de delay",
+  "version": "1.0.1",
+  "description": "Biblioteca para controle de delay usando millis()",
   "keywords": "delay",
-  "authors": [{ "name": "Leandro Bitencourt", "email": "bitcourt@gmail.com" }],
-  "license": "MIT",
-  "frameworks": "*",
-  "plataforms": "*"
+  "authors": [
+    {
+      "name": "Leandro Bitencourt",
+      "email": "bitcourt@gmail.com"
+    }
+  ],
+  "license": "MIT", 
+  "plataforms": "*",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leandrobitencourt/InventDelay.git"
+  },
+  "frameworks": "arduino",
+  "platforms": "*"
 }
