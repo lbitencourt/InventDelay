@@ -21,7 +21,7 @@ public:
   InventDelay(uint32_t);
   void setDelayTime(uint32_t);
   void reset(void);
-  bool expired(void);
+  bool hasExpired(void);
   uint32_t getTimeSinceLast(void);
 };
 

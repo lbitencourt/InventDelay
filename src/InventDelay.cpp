@@ -23,7 +23,7 @@ uint32_t InventDelay::getTimeSinceLast(void) {
   return _timeSinceLast;
 }
 
-bool InventDelay::expired(void) {
+bool InventDelay::hasExpired(void) {
   _timeSinceLast = (millis() - this->_startTime);
   if (_timeSinceLast >= this->_delayTime) {
     this->reset();
