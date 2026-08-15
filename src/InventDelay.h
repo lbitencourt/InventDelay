@@ -8,7 +8,7 @@
 #ifndef INVENT_DELAY_H
 #define INVENT_DELAY_H
 
-#include "Arduino.h"
+#include <stdint.h>
 
 class IDelay {
 public:

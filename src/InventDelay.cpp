@@ -5,6 +5,8 @@
   * @date June 2024  
  */
 
+#include <Arduino.h>
+
 #include "InventDelay.h"
 
 InventDelay::InventDelay() {
