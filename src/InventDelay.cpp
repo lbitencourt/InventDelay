@@ -18,15 +18,19 @@ void InventDelay::setDelayTime(uint32_t delayTime) {
 }
 void InventDelay::reset(void) {
   this->_startTime = millis();
+  this->_expired = false;
 }
 uint32_t InventDelay::getTimeSinceLast(void) {
   return _timeSinceLast;
 }
 
 bool InventDelay::hasExpired(void) {
+  if (_expired) {
+    return true;
+  }
   _timeSinceLast = (millis() - this->_startTime);
   if (_timeSinceLast >= this->_delayTime) {
-    this->reset();
+    this->_expired = true;
     return true;
   }
   return false;
