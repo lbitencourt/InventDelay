@@ -12,9 +12,9 @@
 
 class InventDelay {
 private:
-  uint32_t _delayTime;
-  uint32_t _startTime;
-  uint32_t _timeSinceLast;
+  uint32_t _delayTime = 0;
+  uint32_t _startTime = 0;
+  uint32_t _timeSinceLast = 0;
 
 public:
   InventDelay(void);
