@@ -23,7 +23,6 @@ class InventDelay : public IDelay {
 private:
   uint32_t _delayTime = 0;
   uint32_t _startTime = 0;
-  uint32_t _timeSinceLast = 0;
   bool _expired = false;
 
 public:
